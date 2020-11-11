@@ -50,7 +50,7 @@ export class Google extends Component {
         <>
         <h3>Google</h3>
           <GoogleLogin
-            clientId="960447938397-vg902lh4c36fikdo1684bigdiq2l67ct.apps.googleusercontent.com"
+            clientId="960447938397-sli7p039rhfp7al24954qkrvmumqcf7m.apps.googleusercontent.com"
             buttonText="LOGIN WITH GOOGLE"
             onSuccess={this.responseGoogle}
             onFailure={this.responseGoogle}
@@ -66,5 +66,4 @@ export class Google extends Component {
     );
   }
 }
-
 export default Google;
