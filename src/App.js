@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Facebook from './components/facebook'
 
@@ -9,7 +8,7 @@ function App() {
         <h1 className="App-title">Facebook Auth Login</h1>
       </header>
       <p className="App-intro">
-        Authenticate withFacebook to get started
+        Authenticate with Facebook to get started
       </p>
       <Facebook/>
     </div>

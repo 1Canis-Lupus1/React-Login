@@ -15,6 +15,15 @@ export class Facebook extends Component {
 
     responseFacebook=(response)=>{
         console.log("My Response:",response)
+        this.setState({
+            userID:response.userID,
+            name:response.name,
+            email:response.email,
+            profilePic:response.picture.data.url,
+            isLoggedIn:true
+        },()=>{
+            console.log("After Set State:",this.state)
+        })
     }
 
     componentClicked=()=>{
