@@ -34,22 +34,16 @@ export class Google extends Component {
 
     if (this.state.isLoggedIn) {
       GoogleContent = (
-        <div
-          style={{
-            width: "400px",
-            margin: "auto",
-            background: "lightgrey",
-            padding: "20px",
-            marginTop: "40px",
-          }}
-        >
-          <img
-            src={this.state.profilePicture}
-            alt={this.state.name}
-          />
-          <h2>Welcome {this.state.name}</h2>
-          <h3>Email: {this.state.email}</h3>
-        </div>
+        <div style={{
+                    width:"700px",
+                    margin:"auto",
+                    background:"lightgrey",
+                    padding:"10px",
+                }}>
+                    <img src={this.state.profilePicture} alt={this.state.name} height="90px"/>
+                    <h2>Welcome {this.state.name}</h2>
+                    <h3>Email: {this.state.email}</h3>
+                </div>
       );
     } else {
       GoogleContent = (

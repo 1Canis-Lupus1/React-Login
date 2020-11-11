@@ -35,17 +35,16 @@ export class Facebook extends Component {
 
         if(this.state.isLoggedIn){
             facebookContent=(
-                <div style={{
-                    width:"400px",
+                <h1 style={{
+                    width:"700px",
                     margin:"auto",
                     background:"lightgrey",
-                    padding:"20px",
-                    marginTop:"40px"
+                    padding:"10px",
                 }}>
                     <img src={this.state.profilePic} alt={this.state.name} height="90px"/>
                     <h2>Welcome {this.state.name}</h2>
                     <h3>Email: {this.state.email}</h3>
-                </div>
+                </h1>
             )
         }else{
             facebookContent=(
