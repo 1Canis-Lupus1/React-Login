@@ -7,10 +7,7 @@ function App() {
       <header className="App-header">
         <h1 className="App-title">Facebook Auth Login</h1>
       </header>
-      <p className="App-intro">
-        Authenticate with Facebook to get started
-      </p>
-      <Facebook/>
+      <Facebook />
     </div>
   );
 }

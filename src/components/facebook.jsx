@@ -34,9 +34,23 @@ export class Facebook extends Component {
         let facebookContent
 
         if(this.state.isLoggedIn){
-            facebookContent=null
+            facebookContent=(
+                <div style={{
+                    width:"400px",
+                    margin:"auto",
+                    background:"lightgrey",
+                    padding:"20px",
+                    marginTop:"40px"
+                }}>
+                    <img src={this.state.profilePic} alt={this.state.name} height="90px"/>
+                    <h2>Welcome {this.state.name}</h2>
+                    <h3>Email: {this.state.email}</h3>
+                </div>
+            )
         }else{
             facebookContent=(
+                <>
+                <h2>Authenticate with Facebook to get started</h2>
                 <FacebookLogin
                     appId="277328167017470"
                     autoLoad={true}
@@ -44,6 +58,7 @@ export class Facebook extends Component {
                     onClick={this.componentClicked}
                     callback={this.responseFacebook} 
                 />
+                </>
             )
         }
 
