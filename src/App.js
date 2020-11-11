@@ -1,5 +1,6 @@
 import './App.css';
 import Facebook from './components/facebook'
+import Google from './components/google';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <h1 className="App-title">Facebook Auth Login</h1>
       </header>
       <Facebook />
+      <Google />
     </div>
   );
 }
