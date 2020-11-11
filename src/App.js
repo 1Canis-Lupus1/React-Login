@@ -6,10 +6,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Facebook Auth Login</h1>
+        <h1 className="App-title">Auth Login</h1>
       </header>
+      <div style={{border:"4px solid black",margin:"40px 80px",padding:"30px"}}>
       <Facebook />
+      </div>
+      <div style={{border:"4px solid black",margin:"40px 80px",padding:"30px"}}>
       <Google />
+      </div>
     </div>
   );
 }

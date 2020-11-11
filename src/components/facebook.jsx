@@ -49,8 +49,8 @@ export class Facebook extends Component {
             )
         }else{
             facebookContent=(
-                <>
-                <h2>Authenticate with Facebook to get started</h2>
+                <h1>
+                <h3>Facebook</h3>
                 <FacebookLogin
                     appId="277328167017470"
                     autoLoad={true}
@@ -58,7 +58,7 @@ export class Facebook extends Component {
                     onClick={this.componentClicked}
                     callback={this.responseFacebook} 
                 />
-                </>
+                </h1>
             )
         }
 
